@@ -1,0 +1,112 @@
+/* Defining variables */
+:root {
+    --primary-color-yellow: hsl(47, 88%, 63%);
+    --primary-color-white: hsl(0, 0%, 100%);
+    --neutral-gray-500: hsl(0, 0%, 42%);
+    --neutral-gray-950: hsl(0, 0%, 7%);
+    --body-font-size: 16px;
+    --body-font-weight: 500;
+    --heading-font-weight: 800;
+}
+
+/*Importing Fonts */
+@font-face {
+    font-family: Figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Figtree-Italic;
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+/*Clearing based box values */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Figtree;
+    color: var(--neutral-gray-950);
+}
+
+/* Setting background color*/
+.main-content {
+    background-color: var(--primary-color-yellow);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling Card*/
+.container {
+    background-color: var(--primary-color-white);
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 8px 8px 0px 0px var(--neutral-gray-950);
+    border: 1px solid var(--neutral-gray-950);
+    transition: 0.25s ease-in;
+}
+
+.container:hover {
+    transform: rotate(3deg);
+}
+
+.img {
+    border-radius: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-color-yellow);
+    color: var(--neutral-gray-950);
+    padding: 12px;
+    width: 80px;
+    font-weight: var(--heading-font-weight);
+    border-radius: 4px;
+    transition: 0.25s ease-in;
+}
+
+.btn:hover {
+    background-color: var(--neutral-gray-950);
+    color: var(--primary-color-yellow);
+}
+
+.date-pub {
+    font-size: 14px;
+    color: var(--neutral-gray-500);
+}
+
+.title {
+    font-weight: var(--heading-font-weight);
+    text-transform: capitalize;
+}
+
+.title:hover {
+    color: var(--primary-color-yellow);
+}
+
+.content {
+    color: var(--neutral-gray-500);
+    font-size: var(--body-font-size);
+}
+
+.avatar {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.name {
+    font-weight: var(--heading-font-weight);
+}
+
+.avatar > img {
+    width: 40px;
+    height: 40px;
+}

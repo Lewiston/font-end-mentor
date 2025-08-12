@@ -41,9 +41,10 @@ p {
     align-items: center;
     background-color: var(--primary-navy-950);
 }
+
 .holder {
     max-width: 800px;
-    height: 360px;
+    height: 320px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,6 +118,7 @@ span {
 
 .stats-item > h3 {
     font-size: 18px;
+    
 }
 
 
