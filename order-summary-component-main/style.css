@@ -26,6 +26,10 @@
 
 .container {
     background-image: linear-gradient(hsla(225, 100%, 94%,0.7), hsla(225, 100%, 94%,0.7)), url(images/pattern-background-desktop.svg);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
     height: 100vh;
     background-repeat: no-repeat;
     display: flex;
@@ -90,6 +94,10 @@
     font-weight: var(--font-weight-medium);
 }
 
+.ghost-btn:hover {
+    color: var(--primary-blue-950);
+}
+
 .primary-btn, .secondary-btn {
     text-decoration: none;
     font-weight: var(--font-weight-bold);
@@ -102,4 +110,12 @@
     background-color: var(--primary-blue-700);
     color: var(--primary-blue-100);
     box-shadow: 0px 8px 32px hsla(245, 75%, 52%, 0.464);
+}
+
+.primary-btn:hover {
+    background-color: var(--neutral-blue-950);
+}
+
+.secondary-btn:hover {
+    color: var(--neutral-blue-950);
 }
