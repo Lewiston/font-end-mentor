@@ -1,0 +1,105 @@
+:root {
+    --primary-blue-100: hsl(225, 100%, 94%);
+    --primary-blue-700: hsl(245, 75%, 52%);
+    --neutral-blue-50: hsl(225, 100%, 98%);
+    --neutral-gray-600: hsl(224, 23%, 55%);
+    --neutral-blue-950: hsl(223, 47%, 23%);
+
+    --font-size: 16px;
+    --font-weight-bold: 900;
+    --font-weight-medium: 700;
+    --font-weight-normal: 500;
+}
+
+@font-face {
+    font-family: Red-Hat;
+    src: url(images/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Red-Hat;
+    font-weight: 400;
+    color: var(--neutral-gray-600);
+}
+
+.container {
+    background-image: linear-gradient(hsla(225, 100%, 94%,0.7), hsla(225, 100%, 94%,0.7)), url(images/pattern-background-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 340px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.text {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text > h3 {
+    font-weight: var(--font-weight-bold);
+    color: var(--neutral-blue-950);
+}
+
+.text > p {
+    line-height: 150%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: hsla(225, 100%, 94%, 0.4);
+    border-radius: 12px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.price > h4 {
+    font-weight: var(--font-weight-medium);
+    color: var(--neutral-blue-950);
+}
+
+.ghost-btn {
+    color: var(--primary-blue-700);
+    font-weight: var(--font-weight-medium);
+}
+
+.primary-btn, .secondary-btn {
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.primary-btn {
+    background-color: var(--primary-blue-700);
+    color: var(--primary-blue-100);
+    box-shadow: 0px 8px 32px hsla(245, 75%, 52%, 0.464);
+}

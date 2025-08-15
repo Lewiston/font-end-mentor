@@ -140,14 +140,23 @@
     height: 223px;
     width: 223px;
     border-radius: 8px;
+   
 }
-
+.eye-img {
+    display: none;
+}
 .overlay:hover {
     background-color: hsla(178, 100%, 50%, 0.7);
     position: absolute;
     height: 223px;
     width: 223px;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay:hover .eye-img { 
+    display: block;
 }
 
 /* .view {
